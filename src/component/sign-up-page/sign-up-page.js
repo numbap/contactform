@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
 import SignUpForm from '../sign-up-form/sign-up-form'
 import FormSubmitted from '../form-submitted/form-submitted'
 import isEmail from 'is-email'
+import '../../custom-styles/custom-styles.css'
 
 class SignUpPage extends React.Component {
     constructor(props){
@@ -12,7 +12,8 @@ class SignUpPage extends React.Component {
             email: '',
             interest: '',
             submitButton: false,
-            formSubmitted: false
+            formSubmitted: false,
+            error: false
         }
 
     }
@@ -24,7 +25,7 @@ class SignUpPage extends React.Component {
             isEmail(this.state.email) ? 
                 this.setState({formSubmitted: true})
                 :
-                this.setState({submitButton: false})  
+                this.setState({submitButton: false, error: true})  
           }, 3000);
     }
 
@@ -39,26 +40,10 @@ class SignUpPage extends React.Component {
                 <div className="row">
                     <div className="col-md-12" style={{textAlign:'left'}}>
                         <h1 
-                            style={{ 
-                                marginTop: '125px', 
-                                fontFamily: 'Montserrat, sans-serif', 
-                                color: 'white', 
-                                fontSize: '65px', 
-                                weight: 'bold', 
-                                textAlign:'center' }} >
+                             className="main_header">
                             INTERNSHIP SIGNUP FORM
                         </h1>
-                        <hr 
-                            style={{ 
-                                marginTop: '15px', 
-                                marginBottom: '15px', 
-                                color: '#d02035', 
-                                backgroundColor: '#d02035', 
-                                height: '5px', 
-                                width:'30%', 
-                                position: 'relative', 
-                                display:'block', 
-                                marginLeft:'0' }} />
+                        <hr className="horizontal_rule" />
                     </div>
                 </div>
                     {this.state.formSubmitted ? 

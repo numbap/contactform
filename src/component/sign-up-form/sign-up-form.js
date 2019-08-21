@@ -13,62 +13,30 @@ const SignUpForm = function (props) {
                 Prepare for your career with a Project Management, Web-Development, Graphic Design or Marketing Internship at Northern.
             </p>
             </div>
-            <div className="col-md-6"
-            style={{
-                paddingTop: '20px'
-            }}>
+            <div className="col-md-6 form_padding_top" >
             <label 
-                className="error"
-                style={{
-                    fontFamily: 'Merriweather, serif', 
-                    color: 'white',
-                    float:'right',
-                    fontSize: '12px'
-                }}>
-                    Please enter a valid email address.
+                className="error_message">
+                    {props.error && (<div>Please enter a valid email address.</div>) }
             </label>	
             <input 
                 type="email" 
-                className="form-control" 
+                className={props.error ? 
+                    "form-control input_email input_email_error" 
+                    :
+                    "form-control input_email"}
                 id="exampleFormControlInput1" 
                 placeholder="Your Email Address *" 
                 value={props.email}
                 onChange={props.changeHandler}
-                name="email"
-                style={{
-                    borderColor: '#d02035',
-                    borderWidth: '2px',
-                    paddingTop: '10px',
-                    paddingBottom: '10px',
-                    height: 'auto',
-                    borderRadius: '0px',
-                    MozBorderRadius: '0px',
-                    WebkitBorderRadius: '0px',
-                    fontFamily: 'Merriweather, serif', 
-                    color: '#282828', 
-                    fontSize: '16px', 
-                    fontStyle: 'italic'}} />
+                name="email"  />
             </div>
-            <div className="col-md-6" 
-            style={{
-                paddingTop: '20px'
-            }}>>
+            <div className="col-md-6 form_padding_top" >
             <select 
-                className="form-control"
+                className="form-control input_interest"
                 name="interest"
                 value={props.interest}
                 onChange={props.changeHandler}
-                style={{
-                    paddingTop: '10px',
-                    paddingBottom: '10px',
-                    height: 'auto',
-                    borderRadius: '0px',
-                    MozBorderRadius: '0px',
-                    WebkitBorderRadius: '0px',
-                    fontFamily: 'Merriweather, serif', 
-                    color: '#282828', 
-                    fontSize: '16px', 
-                    fontStyle: 'italic'}} >
+                 >
                 <option value="Your Interests" >Your Interests</option>
                 <option value="Development" >Development</option>
                 <option value="Design" >Design</option>
@@ -77,14 +45,7 @@ const SignUpForm = function (props) {
             </div>
             <div className="col-md-12" style={{ padding:'15px' }}>
             <Button 
-                style={{ 
-                    backgroundColor:'#d02035', 
-                    border: '0', 
-                    marginTop: '5px',
-                    padding: '15px',
-                    fontWeight: 'bold',
-                    fontFamily: 'Merriweather, serif',  }}
-                    className="col-md-12"
+                    className="col-md-12 submit_button"
                     onClick={props.clickHandler}
                     >
                     {props.submitButton ? 

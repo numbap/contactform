@@ -1,0 +1,95 @@
+.main_header {
+    margin-top: 125px;
+    font-family: Montserrat, sans-serif; 
+    color: white;
+    font-size: 65px; 
+    weight: bold;
+    text-align: center;
+}
+
+.horizontal_rule {
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    color: #d02035; 
+    background-color: #d02035; 
+    height: 5px; 
+    width: 30%; 
+    position: relative; 
+    display: block; 
+    margin-left:0;
+}
+
+.submitted_subheader {
+    margin-top: 20px; 
+    font-family: Montserrat, sans-serif; 
+    color: white; 
+    font-size: 35px; 
+    weight: bold;
+    text-align: left;
+}
+
+.submitted_parageaph {
+    font-family: Merriweather, serif; 
+    color: white; 
+    font-size: 20px;
+}
+
+.error_message {
+    font-family: Merriweather, serif; 
+    color: white;
+    float: right;
+    font-size: 12px;
+}
+
+.input_email {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    font-family: Merriweather, serif; 
+    color: #282828; 
+    font-size: 16px; 
+    font-style: italic;
+}
+
+.input_interest {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    font-family: Merriweather, serif; 
+    color: #282828;
+    font-size: 16px; 
+    font-style: itali;
+}
+
+.input_email_error {
+    border-color: #d02035;
+    border-width: 2px;
+}
+
+.submit_button {
+    background-color: #d02035;
+    border: 0; 
+    margin-top: 5px;
+    padding: 15px;
+    font-weight: bold;
+    font-family: Merriweather, serif;
+}
+
+.submit_button:hover {
+    background-color: #d02035;
+    border: 0; 
+    margin-top: 5px;
+    padding: 15px;
+    font-weight: bold;
+    font-family: Merriweather, serif;
+}
+
+.form_padding_top {
+    padding-top: 20px;
+}
