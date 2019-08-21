@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormSubmitted render test 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-12 header_left"
+  >
+    <h3
+      className="submitted_subheader"
+    >
+      Thank you for your interest!
+    </h3>
+    <p
+      className="submitted_paragraph"
+    >
+      We will review your application and contact you for additional information should your background and experience meet the requirements of our openings.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`LoginButton render test 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-12 header_left"
+  >
+    <h3
+      className="submitted_subheader"
+    >
+      Thank you for your interest!
+    </h3>
+    <p
+      className="submitted_paragraph"
+    >
+      We will review your application and contact you for additional information should your background and experience meet the requirements of our openings.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`LoginButton render test 2`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-12 header_left"
+  >
+    <p
+      className="form_paragraph"
+    >
+      Prepare for your career with a Project Management, Web-Development, Graphic Design or Marketing Internship at Northern.
+    </p>
+  </div>
+  <div
+    className="col-md-6 form_padding_top"
+  >
+    <div
+      className="label_height"
+    >
+      <label
+        className="error_message"
+      />
+    </div>
+    <form>
+      <input
+        className="form-control input_email"
+        id="exampleFormControlInput1"
+        name="email"
+        placeholder="Your Email Address *"
+        type="email"
+      />
+    </form>
+  </div>
+  <div
+    className="col-md-6 form_padding_top"
+  >
+    <div
+      className="label_height"
+    />
+    <select
+      className="form-control input_interest"
+      name="interest"
+    >
+      <option
+        value="Your Interests"
+      >
+        Your Interests
+      </option>
+      <option
+        value="Development"
+      >
+        Development
+      </option>
+      <option
+        value="Design"
+      >
+        Design
+      </option>
+      <option
+        value="Marketing"
+      >
+        Marketing
+      </option>
+    </select>
+  </div>
+  <div
+    className="col-md-12 padding_15"
+  >
+    <ForwardRef
+      active={false}
+      className="col-md-12 submit_button"
+      disabled={false}
+      type="button"
+      variant="primary"
+    >
+      <div>
+        Sign Up Now 
+        <i
+          className="fas fa-caret-right caret_style"
+        />
+      </div>
+    </ForwardRef>
+  </div>
+</div>
+`;
+
+exports[`LoginButton render test 3`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-12 header_left"
+    >
+      <h1
+        className="main_header"
+      >
+        INTERNSHIP SIGNUP FORM
+      </h1>
+      <hr
+        className="horizontal_rule"
+      />
+    </div>
+  </div>
+  <SignUpForm
+    changeHandler={[Function]}
+    clickHandler={[Function]}
+    email=""
+    error={false}
+    formSubmitted={false}
+    interest=""
+    submitButton={false}
+  />
+</div>
+`;
+
+exports[`SignUpForm render test 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-12 header_left"
+  >
+    <p
+      className="form_paragraph"
+    >
+      Prepare for your career with a Project Management, Web-Development, Graphic Design or Marketing Internship at Northern.
+    </p>
+  </div>
+  <div
+    className="col-md-6 form_padding_top"
+  >
+    <div
+      className="label_height"
+    >
+      <label
+        className="error_message"
+      />
+    </div>
+    <form>
+      <input
+        className="form-control input_email"
+        id="exampleFormControlInput1"
+        name="email"
+        placeholder="Your Email Address *"
+        type="email"
+      />
+    </form>
+  </div>
+  <div
+    className="col-md-6 form_padding_top"
+  >
+    <div
+      className="label_height"
+    />
+    <select
+      className="form-control input_interest"
+      name="interest"
+    >
+      <option
+        value="Your Interests"
+      >
+        Your Interests
+      </option>
+      <option
+        value="Development"
+      >
+        Development
+      </option>
+      <option
+        value="Design"
+      >
+        Design
+      </option>
+      <option
+        value="Marketing"
+      >
+        Marketing
+      </option>
+    </select>
+  </div>
+  <div
+    className="col-md-12 padding_15"
+  >
+    <ForwardRef
+      active={false}
+      className="col-md-12 submit_button"
+      disabled={false}
+      type="button"
+      variant="primary"
+    >
+      <div>
+        Sign Up Now 
+        <i
+          className="fas fa-caret-right caret_style"
+        />
+      </div>
+    </ForwardRef>
+  </div>
+</div>
+`;
+
+exports[`SignUpPage render test 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-12 header_left"
+    >
+      <h1
+        className="main_header"
+      >
+        INTERNSHIP SIGNUP FORM
+      </h1>
+      <hr
+        className="horizontal_rule"
+      />
+    </div>
+  </div>
+  <SignUpForm
+    changeHandler={[Function]}
+    clickHandler={[Function]}
+    email=""
+    error={false}
+    formSubmitted={false}
+    interest=""
+    submitButton={false}
+  />
+</div>
+`;

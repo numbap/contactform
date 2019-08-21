@@ -28,14 +28,16 @@
     text-align: left;
 }
 
-.submitted_parageaph {
+.submitted_paragraph {
     font-family: Merriweather, serif; 
     color: white; 
+    text-align:left;
     font-size: 20px;
 }
 
 .error_message {
     font-family: Merriweather, serif; 
+    display: inline-block;
     color: white;
     float: right;
     font-size: 12px;
@@ -91,5 +93,28 @@
 }
 
 .form_padding_top {
-    padding-top: 20px;
+    padding-top: 5px;
+}
+
+.form_paragraph {
+    font-family: Merriweather, serif; 
+    color: white;
+    font-size: 20px; 
+}
+
+.header_left {
+    text-align:'left';
+}
+
+.label_height {
+    height: 25px;
+}
+
+.caret_style {
+    margin-left:5px; 
+    font-size: 13px;
+}
+
+.padding_15 {
+    padding: 15px;
 }

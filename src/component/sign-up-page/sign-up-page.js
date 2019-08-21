@@ -15,18 +15,19 @@ class SignUpPage extends React.Component {
             formSubmitted: false,
             error: false
         }
-
     }
 
     processForm = (e) => {
         e.preventDefault()
         this.setState({submitButton: true})
         setTimeout(() => {
-            isEmail(this.state.email) ? 
+            if(isEmail(this.state.email) && (this.state.submitButton)){
                 this.setState({formSubmitted: true})
-                :
+                console.log("Email: ", this.state.email, "Interest: ", this.state.interest)
+            } else {
                 this.setState({submitButton: false, error: true})  
-          }, 3000);
+            }
+          }, 2000);
     }
 
     changeHandler = (e) => {
@@ -38,7 +39,7 @@ class SignUpPage extends React.Component {
         return (
             <div className="container" >
                 <div className="row">
-                    <div className="col-md-12" style={{textAlign:'left'}}>
+                    <div className="col-md-12 header_left" >
                         <h1 
                              className="main_header">
                             INTERNSHIP SIGNUP FORM
